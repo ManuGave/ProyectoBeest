@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manuel's Page</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class = "body" bgcolor="aqua">
+
+     <div class = "presentacion">
+
+
+
+    <!-- Tu presentación -->
+
+
+    
+    <title>Manuel's page</title>
+
+    <h1>Manuel's page</h1>
+
+    <img src="ImagenManuel.jpeg" alt="Mi Avatar" class="imagenDePresentacion">
+
+    <h2>
+        <p>
+        My name is Manuel Garcia de la Vega, I'm 18 years old and i was born at 03/28/08, at Rosario, Argentina.
+        </p>
+
+        <p>        
+            I'm part of a huge family, i have a brother that is my twin and I have tree older brothers, 2 of them are twins too and my sister.Im a student from Instituto Politecnico Superior, General San Martin, from Rosario, Santa Fé, Argentina.
+        </p>
+
+        <p>        
+        I'm in my way to be a good worker, in the finish of this year, i will be able to say that i have a title, "Informathical Technic". I already have many courses made like: bug hunting, starts of artificial intelligence and much more.
+        </p>
+
+
+    </h2>
+
+        <p>        
+            Contacto
+        </p>
+       
+        <ul>
+            <li>I have a medium level of english and i work everyday to improve it.</li>
+
+            <li>I enjoy too much of playing rugby, it's my dream to be a professional player.</li>
+
+            <li>I enjoy a lot listening to music and coding in my free time. I play games like Rocket League or Rust too!</li>
+            
+            <li>If someone want contact me, i leave my contact information here:</li>
+
+            <li>Mobile Phone: +54 341 265 1133</li>
+
+            <li>Email:gdelavega.manuel@gmail.com</li>
+
+        </ul>
+
+    </div>
+
+
+
+    <div class = "grilla-prueba"> </div>
+
+    <script>
+
+    const grilla = document.querySelector('.grilla-prueba');
+
+    const cantidadColumnas = Math.floor(window.innerWidth / 40);
+    const cantidadFilas = Math.floor(window.innerHeight / 40);
+
+    grilla.style.setProperty('--columnas', cantidadColumnas);
+    grilla.style.setProperty('--filas', cantidadFilas);
+
+    const totalPixeles = cantidadColumnas * cantidadFilas;
+
+    for (let i = 0; i < totalPixeles; i++) {
+        const nuevoPixel = document.createElement('div');
+        nuevoPixel.classList.add('pixel');
+        grilla.appendChild(nuevoPixel);
+    }
+    </script>
+
+</body>
+</html>
