@@ -63,6 +63,7 @@
     font-size: 24px;
     line-height: 1.4;
     text-align: center;
+    pointer-events: none;
 }
 
 .pixel:hover {
@@ -99,15 +100,14 @@
 
 
 .esquivable{
+    margin-left: 10px;
+    margin-right: 10px;
     display: inline-block;
     position: relative;
     cursor: pointer;
     transition: transform 0.2s ease-out; 
     user-select: none;
     z-index: 15;
+    pointer-events: all !important;
 }
 
-
-.efectoBoton{
-    
-}
