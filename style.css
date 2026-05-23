@@ -49,7 +49,7 @@
     
     transform: translate(-50%, -50%);
     
-    z-index: 10; 
+    z-index: 3; 
     color: white;
     background-color: rgba(13, 17, 23, 0.85);
     border: 2px solid #21262d;
@@ -70,9 +70,8 @@
     background-color: #00fff2 !important; 
     box-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2;
     position: relative;
-    z-index: 1;
-    transition: none; 
     z-index: 2;
+    transition: none; 
 }
 
 .titulo{
@@ -107,7 +106,66 @@
     cursor: pointer;
     transition: transform 0.2s ease-out; 
     user-select: none;
-    z-index: 15;
+    z-index: 4;
     pointer-events: all !important;
 }
+
+/* --- ANIMACIÓN DE TEMBLOR VIOLENTO --- */
+@keyframes temblor {
+    0% { transform: translate(-50%, -50%) translate(0, 0) rotate(0deg); }
+    10% { transform: translate(-50%, -50%) translate(-10px, 8px) rotate(-3deg); }
+    20% { transform: translate(-50%, -50%) translate(12px, -8px) rotate(3deg); }
+    30% { transform: translate(-50%, -50%) translate(-12px, -5px) rotate(-1deg); }
+    40% { transform: translate(-50%, -50%) translate(10px, 8px) rotate(2deg); }
+    50% { transform: translate(-50%, -50%) translate(-8px, -10px) rotate(-2deg); }
+    60% { transform: translate(-50%, -50%) translate(12px, 8px) rotate(3deg); }
+    70% { transform: translate(-50%, -50%) translate(-10px, -8px) rotate(-3deg); }
+    80% { transform: translate(-50%, -50%) translate(8px, 10px) rotate(1deg); }
+    90% { transform: translate(-50%, -50%) translate(-12px, 8px) rotate(-2deg); }
+    100% { transform: translate(-50%, -50%) translate(0, 0) rotate(0deg); }
+}
+
+/* Clase que le aplicaremos a la tarjeta para que tiemble antes de romperse */
+.explotando {
+    animation: temblor 0.15s infinite;
+    border-color: #ff0055 ;
+    box-shadow: 0 0 30px #ff0055;
+}
+
+.pantalla-error p {
+    font-size: 18px;
+    color: white;
+    text-shadow: none;
+    font-family: 'VT323', monospace;
+}
+ 
+
+.error404{
+    font-size: 60px;
+}
+
+.pantallaError {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: rgb(255, 0, 0);
+    background-color: rgba(13, 17, 23, 0.85);
+    border: 2px solid #21262d;
+    border-radius: 8px;
+    padding: 30px;
+    width: 90%;
+    max-width: 90%;
+    font-family: "VT323", monospace;
+    font-size: 30px;
+    line-height: 1.4;
+    text-align: center;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.hidden {
+    display: none !important; 
+}
+
 
