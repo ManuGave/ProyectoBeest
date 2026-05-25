@@ -23,7 +23,7 @@
      <div class = "presentacion">
 
 
-        <div class="contenedor-imagen"> <img src="ImagenManuel.jpeg" alt="Mi Avatar" class="foto-perfil"> </div>
+        <button class="button-imagen" id="imagen-boton"> <img src="ImagenManuel.jpeg" alt="Mi Avatar" class="foto-perfil"> </button>
 
 
     
@@ -35,7 +35,7 @@
 
     <h2>
         <p>
-            Hey! my name is Manuel Garcia de la Vega, I'm an 18 year-old IT student who was born on the 28th of March, 2008, in Rosario, Argentina.
+            Hey! my name is <tag class = "resaltar">Manuel Garcia de la Vega</tag>, I'm an 18 year-old <tag class = "resaltar">IT student</tag> who was born on the 28th of March, 2008, in Rosario, Argentina.
         </p>
 
         <p> I am currently studying to be an IT technician by the end of 2026, at the Instituto Poitecnico Superior.</p>
@@ -64,9 +64,9 @@
             <p>        
                 Contact
             </p>
-            <button class = "esquivable">Mobile Phone: +54 341 265 1133</button>
+            <button class = "esquivable">Mobile Phone: <tag class = "resaltar">+54 341 265 1133</tag></button>
 
-            <button class = "esquivable">Email:gdelavega.manuel@gmail.com</button>
+            <button class = "esquivable">Email:<tag class = "resaltar">gdelavegamanuel@gmail.com</tag></button>
 
         </ul>
 
@@ -85,7 +85,42 @@
 <div id='pantallaError' class='pantallaError hidden'> 
     <p class="error404">ERROR 404</p>
     <p> No se encontraron ganas de laburo en esta pagina, busque en otro lado.</p>
+    <p>O recargue la pagina y siga intentando...</p>
 </div>
+
+
+<div class="tarjetaPresentacion"></div>
+    <div class = "contenedor-imagen-presentacion hidden" id="tarjetaPresentacion">
+        <img src="ImagenManuel.jpeg" class = "foto-perfil-verde">
+    </div>
+
+    <h1 class = "titulo-verde">Manuel Garcia de la Vega</h1>
+    <p class = "subtitulo-verde">Informathical Technic</p>
+
+    <div class="columnas-contacto">
+        <div class="columna">
+            <span class = "icono-verde">📱</span>
+            <h3>Mobile phone</h3>
+            <p>+54 341 265 1133</p>
+        </div>
+
+        <div class="columna">
+            <span class = "icono-verde">✉️</span>
+            <h3>Email</h3>
+            <p>gdelavegamanuel@gmail.com</p>
+        </div>
+
+        <div class="columna">
+            <span class = "icono-verde">💻</span>
+            <h3>Github</h3>
+            <p>https://github.com/manugave</p>
+        </div>
+        
+    </div>
+
+</div>
+
+
 
 </body>
 

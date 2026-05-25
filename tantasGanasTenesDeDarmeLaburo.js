@@ -31,10 +31,7 @@ elementosEscape.forEach(elemento => {
             tarjeta.style.display = 'none';
             const cartel = document.getElementById('pantallaError');
             if (cartel) {
-                cartel.classList.remove("hidden"); // 👈 Tu lógica impecable de Tailwind
-                console.log("¡BOOM! Cartel mostrado removiendo 'hidden'.");
-            } else {
-                console.log("No se encontró el id 'pantallaError' en el HTML");
+                cartel.classList.remove("hidden");
             }
         }, 1200);
     });
