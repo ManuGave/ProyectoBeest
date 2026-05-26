@@ -35,8 +35,6 @@ I made it with the Pitagoras theorem and a foreach per pixel with a cicle with a
 ## Demo
 
 
-
-
 ##
 
 Escentially that's it.
