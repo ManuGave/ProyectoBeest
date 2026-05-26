@@ -1,8 +1,8 @@
 .grilla-prueba{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(var(--columnas), 1fr);
-    grid-template-rows: repeat(var(--filas), 1fr);
+    grid-template-columns: repeat(var(--columnas), 40px);
+    grid-template-rows: repeat(var(--filas), 40px);
     background-color: #0d1117;
     position: fixed;
     top: 0; left: 0;
@@ -14,7 +14,6 @@
 }
 
 .pixel{
-    width: 0,5%;
     padding: 1%;
     background-color: rgb(32, 36, 36);
     z-index: 1; 

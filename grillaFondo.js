@@ -1,5 +1,5 @@
 
-
+    
     const grilla = document.querySelector('.grilla-prueba');
 
     const cantidadColumnas = Math.floor(window.innerWidth / 40);
@@ -15,3 +15,7 @@
         nuevoPixel.classList.add('pixel');
         grilla.appendChild(nuevoPixel);
     }
+
+
+
+
