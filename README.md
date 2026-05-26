@@ -23,21 +23,3 @@ And obviously, when i saw that i can but Subnautica 2 by programming, i was so h
 
 ## How i did it?
 
-I made the structure using html, I made the design and part of some funcions with css and tailwind, it could look like basic because I'm starting in the world of this yet. And I made all the other functions with Javascript because I enjoy use it and I already know a little bit of this lenguage.
-
-To the pixel painting i made it in 2 ways. For the blue panel, I used in css the class/property pixel:hover.
-The other way was make it with Javascript with an eventListener mouseover and other eventListener mouseout.
-To the changes of cards i used classLists, the property hidden that is declared at the css, and the js function, classList.remove.
-
-To the propagation of the green card I made a function that finds the position in the center of the screen.
-I made it with the Pitagoras theorem and a foreach per pixel with a cicle with an index called i.
-
-## Demo
-
-
-##
-
-Escentially that's it.
-
-If you wanna contact me for something, you have the data and the way to obtain it there!
-
