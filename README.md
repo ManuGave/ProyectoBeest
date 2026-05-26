@@ -32,6 +32,12 @@ To the changes of cards i used classLists, the property hidden that is declared 
 To the propagation of the green card I made a function that finds the position in the center of the screen.
 I made it with the Pitagoras theorem and a foreach per pixel with a cicle with an index called i.
 
+## Demo
+
+There are some images in a way of preview of the website.
+
+##
+
 Escentially that's it.
 
 If you wanna contact me for something, you have the data and the way to obtain it there!
