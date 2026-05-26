@@ -19,27 +19,20 @@
     background-color: rgb(32, 36, 36);
     z-index: 1; 
     border-radius: 7px;
-    border: 2px solid aqua;
+    border: 3px solid aqua;
     transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
-.contenedor-imagen {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    pointer-events: auto !important;
-}
 
 .body{
     display: flex;
     justify-content: center; 
     align-items: center;    
-    min-height: 100vh;       
-    width: 100vw;            
+    min-height: 100%;       
+    width: 100%;            
     background-color: aqua !important;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .presentacion {
@@ -55,10 +48,9 @@
     background-color: rgba(13, 17, 23, 0.85);
     border: 2px solid #21262d;
     border-radius: 8px;
-    padding: 30px;
-    
+    padding: 2%;
+
     width: 90%;
-    max-width: 90%;
 
     font-family: "VT323", monospace;
     font-size: 24px;
@@ -131,13 +123,9 @@
     box-shadow: 0 0 30px #ff0055;
 }
 
-.pantalla-error p {
-    font-size: 18px;
-    color: white;
-    text-shadow: none;
-    font-family: 'VT323', monospace;
+.temblando {
+    animation: temblor 0.15s infinite;
 }
- 
 
 .error404{
     font-size: 60px;
@@ -166,7 +154,6 @@
 .hidden {
     display: none !important; 
 }
-
 
 .resaltar{
     color:#00fff2;
@@ -197,7 +184,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 6;
+    z-index: 1;
     
     width: 45%;
     height:70%;
@@ -215,6 +202,7 @@
     color: white;
     font-family: 'VT323', monospace;
     text-align: center;
+    pointer-events: none;
 }
 
 
@@ -230,4 +218,65 @@
     box-shadow: 0 0 10px #00ff66;
     margin-bottom: 10%;
     margin-top: -15%; 
+}
+
+.contenedor-boton{
+    pointer-events: all !important;
+}
+
+.titulo-verde {
+    font-family: 'Press Start 2P', cursive; /* Fuente estilo Arcade */
+    font-size: 20px;
+    color: #00ff66;
+    text-shadow: 0 0 8px rgba(0, 255, 102, 0.6);
+    margin: 15px 0 5px 0;
+}
+
+
+.subtitulo-verde {
+    font-size: 26px;
+    color: #88ffaa;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+
+.columnas-contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.icono-verde {
+    font-size: 38px;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 0 6px #00ff66);
+}
+
+
+.columna h3 {
+    font-size: 20px;
+    color: #00ff66;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+
+.columna p {
+    font-size: 16px;
+    color: #e0fbe7;
+    line-height: 1.2;
+    word-break: break-all;
+    max-width: 150px;
 }

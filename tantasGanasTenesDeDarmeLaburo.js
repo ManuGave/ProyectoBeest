@@ -24,6 +24,7 @@ elementosEscape.forEach(elemento => {
         pixeles.forEach(p => {
             p.style.backgroundColor = '#2a0010';
             p.style.borderColor = '#ff0055';
+
         });
 
         setTimeout(() => {
