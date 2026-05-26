@@ -26,6 +26,7 @@ elementosEscape.forEach(elemento => {
             p.style.borderColor = '#ff0055';
 
         });
+        
 
         setTimeout(() => {
             const pantallaError = document.getElementById('pantallaError');
@@ -34,6 +35,19 @@ elementosEscape.forEach(elemento => {
             if (cartel) {
                 cartel.classList.remove("hidden");
             }
+
+            pixeles.forEach(p => {
+                p.addEventListener('mouseover', () => {
+                    p.style.setProperty('background-color', '#ff0055', 'important');
+                    p.style.setProperty('box-shadow', '0 0 10px #ff0055, 0 0 20px #ff0055', 'important');
+                });    
+
+                p.addEventListener('mouseout', () => {
+                    p.style.setProperty('background-color', '#2a0010', 'important');
+                    p.style.setProperty('box-shadow', 'none', 'important');
+                });
+            });
+
         }, 1200);
     });
 });

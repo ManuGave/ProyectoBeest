@@ -60,7 +60,7 @@
 }
 
 .pixel:hover {
-    background-color: #00fff2 !important; 
+    background-color: #00fff2; 
     box-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2;
     position: relative;
     z-index: 2;
@@ -179,12 +179,12 @@
     z-index: 6;
 }
 
-.contenedor-imagen-presentacion{
+.tarjetaPresentacionVerde{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 7;
     
     width: 45%;
     height:70%;
@@ -209,7 +209,7 @@
 .foto-perfil-verde{
     position: absolute;
     top: 0%;
-    left: 12,5%;
+    left: 37.5%;
     width: 25%;
     height: 35%;
     border-radius: 50%;
@@ -225,7 +225,7 @@
 }
 
 .titulo-verde {
-    font-family: 'Press Start 2P', cursive; /* Fuente estilo Arcade */
+    font-family: 'Press Start 2P', cursive;
     font-size: 20px;
     color: #00ff66;
     text-shadow: 0 0 8px rgba(0, 255, 102, 0.6);
@@ -243,7 +243,7 @@
 
 .columnas-contacto {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
     padding: 0 10px;
