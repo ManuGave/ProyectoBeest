@@ -38,7 +38,7 @@ There are some images in a way of preview of the website.
 
 ##
 
-Escentially that's it.
+Escentially that's it. Sorry me if your eyes hurted while you was reading, my english writing was very abandoned.
 
 If you wanna contact me for something, you have the data and the way to obtain it there!
 
