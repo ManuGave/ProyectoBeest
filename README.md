@@ -36,6 +36,15 @@ I made it with the Pitagoras theorem and a foreach per pixel with a cicle with a
 
 There are some images in a way of preview of the website.
 
+
+![MainScreen](ReadmeImages/MainScreen.png)
+![MainScreenContactBait](ReadmeImages/MainScreenContactBait.png)
+![ErrorTransition](ReadmeImages/ErrorBoom.png)
+![ErrorScreen](ReadmeImages/ErrorScreen.png)
+![ProfileBoom](ReadmeImages/ProfileBoom.png)
+![Profileboom](ReadmeImages/ProfileBoom1.png)
+![Profileboom](ReadmeImages/ProfileScreen.png)
+
 ##
 
 Escentially that's it.
